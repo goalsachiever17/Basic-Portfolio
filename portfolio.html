@@ -1,111 +1,66 @@
-
-<!-- Basic CSS Example -->
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
-  <title>Basic Portfolio</title>
-
-<!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
-
-<style>
-.box {
-  border-style: none;
-}
-
-.injected-text{
- text-align: center;: auto; 
-}
-
-.white-box-header{
- background-color: #ffffff;
- padding: 10px; 
-}
-
-.white-box{
- background-color: #ffffff;
- padding: 10px;
- border-width: 10px
- margin: 10px 200px 0px 200px; 
-}
-.teal-box{
- background-color: #4aaaa5;
- padding: 10px; 
-}
-.teal-box-header{
- background-color: #4aaaa5;
- padding: 10px; 
- margin: 10px 200px 0px 200px;
- color: #ffffff
-}
-.hexgray40-box{
-  background-color: #666666;
- padding: 10px;  
-}
-
-.small-header-box{
-  background-color: #ffffff;
- padding: 10px; 
- font-size: 12px;
- margin: 10px 200px 0px 200px;
- color: #808080;
-}
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 18px;
-  line-height: 32px;
-  background-color: #E5E4E2;
-}
-
-h1 {
-  margin-bottom: 20px;
-  font-size: 36px;
-  font-family: georgia;
-  line-height: 45px;
-}
-
-p {
-  margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 28px;
-}
-
-a:link{
- text-decoration: none; 
-}
-
-.column {
-    float: left;
-}
-
-.left {
-    width: 75%;
-}
-
-.right {
-    width: 25%;
-}
-</style>
-  
+  <title>Contact | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-<div class="box white-box-header row" >
-  <header>
-    <div class="column"> 
-    <h1  class="box teal-box-header injected-text">Becky Apo</h1>
-  </div>
-    <div class="column">
-    <h1 class="small-header-box injected-text"> <a href="index.html">About</a>  | <a href="portfolio.html">Portfolio</a> | <a href="contact.html">Contact</a>
-      </div>
-  </header>
-</div>
 
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Your Name</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        <a href="#"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
+        <a href="#"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="#"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 2016 Your Name
+    </div>
+  </footer>
 </body>
 
 </html>

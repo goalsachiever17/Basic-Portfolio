@@ -1,121 +1,54 @@
-
-<!-- Basic CSS Example -->
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
-  <title>Basic Portfolio</title>
-
-<!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
-
-<style>
-.box {
-  border-style: none;
-}
-
-.injected-text{
- text-align: center;: auto; 
-}
-
-.white-box-header{
- background-color: #ffffff;
- padding: 10px; 
-}
-
-.white-box{
- background-color: #ffffff;
- padding: 10px;
- border-width: 10px
- margin: 10px 200px 0px 200px; 
-}
-.teal-box{
- background-color: #4aaaa5;
- padding: 10px; 
-}
-.teal-box-header{
- background-color: #4aaaa5;
- padding: 10px; 
- margin: 10px 200px 0px 200px;
- color: #ffffff
-}
-.hexgray40-box{
-  background-color: #666666;
- padding: 10px;  
-}
-
-.small-header-box{
-  background-color: #ffffff;
- padding: 10px; 
- font-size: 12px;
- margin: 10px 200px 0px 200px;
- color: #808080;
-}
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 18px;
-  line-height: 32px;
-  background-color: #E5E4E2;
-}
-
-h1 {
-  margin-bottom: 20px;
-  font-size: 36px;
-  font-family: georgia;
-  line-height: 45px;
-}
-
-p {
-  margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 28px;
-}
-
-a:link{
- text-decoration: none; 
-}
-
-.column {
-    float: left;
-}
-
-.left {
-    width: 75%;
-}
-
-.right {
-    width: 25%;
-}
-</style>
-  
+  <title>About | Becky Apo</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-<div class="box white-box-header row" >
-  <header>
-    <div class="column"> 
-    <h1  class="box teal-box-header injected-text">Becky Apo</h1>
-  </div>
-    <div class="column">
-    <h1 class="small-header-box injected-text"> <a href="index.html">About</a>  | <a href="portfolio.html">Portfolio</a> | <a href="contact.html">Contact</a>
-      </div>
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Becky Apo</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
-</div>
 
-  <div class="box row" >
-    <div class="column white-box">
-    <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAz1AAAAJGQ4ZTk1M2Y5LTVhNWYtNGMzMi1iNGViLWRkOTFlMGVjZjQ4ZQ.jpg" alt="becky apo"> 
-    <p>I am a person with high determination. My passion for success makes me ignore obstacles. I have a background in Science, Business and now, web programing. I love travelling and meeting people.</p>
-  </div>
-    <div class="column small-header-box">
-    <h1 class="small-header-box"> <a href="https://github.com/goalsachiever17">Github </a>  | <a href="https://www.linkedin.com/in/rebecca-apo/">LinkedIn</a> | <a href="https://stackoverflow.com/users/8839489/becky-apo">Stack Overflow</a>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>About Me</h1>
+
+      <img src="assets/images/becky-apo.jpg" class="auth-image" alt="Becky Apo">
+
+      <p>My name is Rebecca, but my friends call me Becky. I am a very enthusiastic person, which makes me enjoy most of what I do. I have a background in Science, Business and right now, Web Development. </p>
+
+      <p>Outside my career, I love to do a bunch of activities like hiking, cooking, running. I love travelling and meeting people.</p>
+
+    </section>
+
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        <a href="https://github.com/goalsachiever17"><img src="assets/images/github-icon.png" class="social" alt="GitHub" /></a>
+        <a href="linkedin.com/in/rebecca-apo/"><img src="assets/images/linkedin-icon.jpg" class="social" alt="LinkedIn" /></a>
+        <a href="https://stackoverflow.com/users/8839489/becky-apo"><img src="assets/images/stackoverflow-icon.png" class="social" alt="Stack Overflow" /></a>
       </div>
+    </section>
+  </div>
 
-
+  <footer>
+    <div class="container">
+      Copyright &copy; 2017 Becky Apo
+    </div>
+  </footer>
 </body>
 
 </html>
